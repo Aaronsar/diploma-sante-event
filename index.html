@@ -684,6 +684,10 @@
             <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" required />
           </div>
           <div class="form-group">
+            <label for="dept">Département (ex : 75) *</label>
+            <input type="text" id="dept" name="departement" placeholder="75" maxlength="3" pattern="[0-9]{2,3}" required />
+          </div>
+          <div class="form-group">
             <label for="niveau">Niveau scolaire *</label>
             <select id="niveau" name="niveau" required>
               <option value="" disabled selected>Sélectionnez votre niveau</option>
