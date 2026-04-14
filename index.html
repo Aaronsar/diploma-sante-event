@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Immersion Médecine – Samedi 25 Avril 2026 | Diploma Santé</title>
+  <meta name="description" content="Rejoignez notre journée Immersion Médecine le samedi 25 avril 2026 de 14h à 18h à Paris. Cours spéciaux, Q&A avec des étudiants et conférences exclusives." />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ── POLICES OFFICIELLES DIPLOMA SANTÉ ── */
+
+    /* Matter – Typographie principale */
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-Light.woff2') format('woff2'), url('MATTER FONT/Matter-Light.woff') format('woff'); font-weight:300; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-Regular.woff2') format('woff2'), url('MATTER FONT/Matter-Regular.woff') format('woff'); font-weight:400; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-RegularItalic.woff2') format('woff2'), url('MATTER FONT/Matter-RegularItalic.woff') format('woff'); font-weight:400; font-style:italic; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-Medium.woff2') format('woff2'), url('MATTER FONT/Matter-Medium.woff') format('woff'); font-weight:500; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-SemiBold.woff2') format('woff2'), url('MATTER FONT/Matter-SemiBold.woff') format('woff'); font-weight:600; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-Bold.woff2') format('woff2'), url('MATTER FONT/Matter-Bold.woff') format('woff'); font-weight:700; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Matter'; src:url('MATTER FONT/Matter-Heavy.woff2') format('woff2'), url('MATTER FONT/Matter-Heavy.woff') format('woff'); font-weight:900; font-style:normal; font-display:swap; }
+
+    /* PP Pangaia – Titres & accroches */
+    @font-face { font-family:'PP Pangaia'; src:url('PP PANGAIA/otf/PPPangaia-Medium.otf') format('opentype'); font-weight:500; font-style:normal; font-display:swap; }
+    @font-face { font-family:'PP Pangaia'; src:url('PP PANGAIA/otf/PPPangaia-MediumItalic.otf') format('opentype'); font-weight:500; font-style:italic; font-display:swap; }
+    @font-face { font-family:'PP Pangaia'; src:url('PP PANGAIA/otf/PPPangaia-Bold.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
+    @font-face { font-family:'PP Pangaia'; src:url('PP PANGAIA/otf/PPPangaia-BoldItalic.otf') format('opentype'); font-weight:700; font-style:italic; font-display:swap; }
+
+    /* Clash Display – Logo uniquement (secondaire) */
+    @font-face { font-family:'Clash Display'; src:url('Fonts/WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2'), url('Fonts/WEB/fonts/ClashDisplay-Semibold.woff') format('woff'); font-weight:600; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Clash Display'; src:url('Fonts/WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'), url('Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff'); font-weight:700; font-style:normal; font-display:swap; }
+
+    /* ── RESET & ROOT ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Couleurs OFFICIELLES charte Diploma Santé 2026 */
+      --bleu-diploma:  #4fabdb;   /* Bleu Diploma – couleur identitaire */
+      --bleu-nuit:     #1d2f4b;   /* Bleu Nuit – RGB(29,47,75) – charte officielle */
+      --bleu-fonce:    #15233a;   /* Encore plus sombre – footer */
+      --bleu-pale:     #a3cceb;   /* LAS */
+      --or:            #c6a36f;   /* Doré Web – RGB(198,162,111) – charte officielle */
+      --or-hover:      #b8935f;   /* Doré hover */
+      --gris-clair:    #dddddc;   /* Gris Clair */
+      --gris-bg:       #EBEBEB;   /* Fond gris très clair */
+      --fond-creme:    #f7f4ef;   /* Fond crème */
+      --blanc:         #ffffff;
+      --texte:         #1d2f4b;   /* Texte sombre = Bleu Nuit */
+      --texte-light:   #5a6a7a;   /* Texte secondaire */
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Matter', Arial, sans-serif;
+      font-size: 15px;
+      color: var(--texte);
+      background: var(--blanc);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5 { color: var(--texte); font-weight: 700; line-height: 1.2; }
+    a { color: var(--bleu-diploma); text-decoration: none; }
+    a:hover { color: var(--bleu-nuit); }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    /* ══════════════════════════════════════════
+       HEADER  – fond blanc comme le site DS
+    ══════════════════════════════════════════ */
+    header {
+      position: sticky;
+      top: 0; z-index: 100;
+      background: var(--blanc);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    /* Logo DS */
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-img { height: 48px; width: auto; display: block; }
+
+    /* CTA header = doré comme le site DS */
+    .header-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--or);
+      color: var(--bleu-nuit);
+      font-family: 'Clash Display', 'Matter', sans-serif;
+      font-size: 13px; font-weight: 600;
+      padding: 11px 24px; border-radius: 100px;
+      transition: background .2s, transform .15s;
+      text-decoration: none;
+    }
+    .header-cta:hover { background: var(--or-hover); color: var(--bleu-nuit); transform: translateY(-1px); }
+
+    /* ══════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════ */
+    .hero {
+      background: var(--bleu-nuit);
+      padding: 72px 0 80px;
+      color: var(--blanc);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* serpent décoratif en arrière-plan */
+    .hero-deco {
+      position: absolute;
+      right: -40px; top: -60px;
+      width: 560px; opacity: .08;
+      pointer-events: none;
+      animation: floatSerpent 20s ease-in-out infinite;
+    }
+    @keyframes floatSerpent {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 430px;
+      gap: 64px;
+      align-items: flex-start;
+      position: relative; z-index: 1;
+    }
+
+    .event-tag {
+      display: inline-flex; align-items: center; gap: 7px;
+      border: 1.5px solid var(--bleu-diploma);
+      color: var(--bleu-diploma);
+      font-size: 11px; font-weight: 700;
+      padding: 5px 14px; border-radius: 2px;
+      text-transform: uppercase; letter-spacing: 1.5px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: 'Clash Display', 'PP Pangaia', Georgia, serif;
+      font-size: 54px; font-weight: 600;
+      color: var(--blanc);
+      margin-bottom: 12px; letter-spacing: -.5px;
+      line-height: 1.12;
+    }
+    .hero h1 em {
+      font-family: 'PP Pangaia', Georgia, serif;
+      color: var(--bleu-diploma); font-style: italic; font-weight: 700;
+    }
+
+    .hero-sub {
+      font-size: 16px; color: rgba(255,255,255,.75);
+      max-width: 500px; margin-bottom: 36px; line-height: 1.7;
+    }
+
+    .event-meta { display: flex; flex-direction: column; gap: 13px; margin-bottom: 40px; }
+    .meta-row { display: flex; align-items: flex-start; gap: 13px; }
+    .meta-icon-wrap {
+      width: 38px; height: 38px; flex-shrink: 0;
+      background: rgba(79,171,219,.12);
+      border: 1px solid rgba(79,171,219,.3);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--bleu-diploma); font-size: 15px;
+    }
+    .meta-text { font-size: 14.5px; color: rgba(255,255,255,.85); padding-top: 8px; }
+    .meta-text strong { color: var(--blanc); display: block; }
+
+    .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(79,171,219,.1);
+      border: 1px solid rgba(79,171,219,.25);
+      color: rgba(255,255,255,.88);
+      font-size: 12.5px; font-weight: 600;
+      padding: 6px 13px; border-radius: 2px;
+    }
+    .pill i { color: var(--bleu-diploma); font-size: 10px; }
+
+    /* ── FORM CARD ── */
+    .form-card {
+      background: var(--blanc);
+      border-radius: 12px;
+      padding: 36px 30px 28px;
+      box-shadow: 0 24px 64px rgba(0,0,0,.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .form-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--bleu-diploma), var(--or));
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    .form-title h3 {
+      font-family: 'PP Pangaia', Georgia, serif;
+      font-size: 22px; font-weight: 700; color: var(--texte);
+      margin-bottom: 4px;
+    }
+    .form-title p { font-size: 13px; color: var(--texte-light); }
+
+    .urgency-strip {
+      background: #fdf6e8;
+      border: 1.5px solid var(--or);
+      border-radius: 4px;
+      padding: 9px 13px; margin-bottom: 18px;
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 700; color: #7a5c10;
+    }
+    .urgency-strip i { color: var(--or); font-size: 13px; }
+
+    .form-group { margin-bottom: 13px; }
+    .form-group label {
+      display: block; font-size: 11.5px; font-weight: 700;
+      color: var(--texte); margin-bottom: 5px;
+      text-transform: uppercase; letter-spacing: .6px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%; height: 44px;
+      padding: 0 13px;
+      font-family: 'Matter', sans-serif; font-size: 14px; color: var(--texte);
+      background: var(--blanc);
+      border: 1.5px solid var(--gris-clair);
+      border-radius: 4px; outline: none;
+      transition: border .2s;
+    }
+    .form-group input:focus, .form-group select:focus {
+      border-color: var(--bleu-diploma);
+      box-shadow: 0 0 0 3px rgba(79,171,219,.12);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+
+    .btn-submit {
+      width: 100%; height: 52px; margin-top: 6px;
+      background: var(--or); color: var(--bleu-nuit);
+      font-family: 'Clash Display', 'Matter', sans-serif; font-size: 15px; font-weight: 600;
+      border: none; border-radius: 50px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 9px;
+      transition: background .2s, transform .15s;
+    }
+    .btn-submit:hover { background: var(--or-hover); transform: translateY(-1px); }
+    .btn-submit:active { transform: none; }
+
+    .form-legal {
+      text-align: center; margin-top: 11px;
+      font-size: 11.5px; color: #aaa;
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+    }
+    .form-legal i { color: #4caf50; font-size: 11px; }
+
+    /* Success */
+    .form-success { display: none; text-align: center; padding: 16px 0; }
+    .success-circle {
+      width: 66px; height: 66px;
+      background: #e8f8ee; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px; font-size: 28px; color: #4caf50;
+    }
+    .form-success h4 { font-size: 19px; margin-bottom: 7px; }
+    .form-success p { font-size: 14px; color: var(--texte-light); }
+
+    /* ══════════════════════════════════════════
+       COUNTDOWN
+    ══════════════════════════════════════════ */
+    .countdown-bar {
+      background: var(--bleu-fonce);
+      border-bottom: 2px solid rgba(79,171,219,.3);
+      padding: 18px 0;
+    }
+    .cd-inner {
+      display: flex; align-items: center;
+      justify-content: center; gap: 36px; flex-wrap: wrap;
+    }
+    .cd-label { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.8); }
+    .cd-timer { display: flex; align-items: center; gap: 10px; }
+    .cd-unit { text-align: center; }
+    .cd-num {
+      display: block; font-size: 34px; font-weight: 800;
+      color: var(--bleu-diploma); line-height: 1;
+    }
+    .cd-lbl {
+      display: block; font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: 1px;
+    }
+    .cd-sep { font-size: 26px; font-weight: 800; color: var(--bleu-diploma); opacity: .5; margin-bottom: 12px; }
+
+    /* ══════════════════════════════════════════
+       TRUST BAR
+    ══════════════════════════════════════════ */
+    .trust-bar {
+      background: var(--fond-creme);
+      border-bottom: 1px solid rgba(0,0,0,.07);
+      padding: 16px 0;
+    }
+    .trust-inner {
+      display: flex; align-items: center;
+      justify-content: center; gap: 44px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 600; color: var(--texte);
+    }
+    .trust-item i { color: var(--bleu-diploma); font-size: 15px; }
+
+    /* ══════════════════════════════════════════
+       SECTIONS COMMUNES
+    ══════════════════════════════════════════ */
+    .section { padding: 78px 0; }
+    .section-creme { background: var(--fond-creme); }
+    .section-dark { background: var(--bleu-nuit); }
+    .section-or { background: var(--or); }
+
+    .section-hd { text-align: center; margin-bottom: 52px; }
+    .eyebrow {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      color: var(--bleu-diploma); text-transform: uppercase; letter-spacing: 2.5px;
+      margin-bottom: 10px;
+    }
+    .eyebrow-or { color: var(--or); }
+    .section-hd h2 {
+      font-family: 'PP Pangaia', Georgia, serif;
+      font-size: 36px; font-weight: 700; margin-bottom: 12px;
+    }
+    .section-hd h2 em { font-style: italic; color: var(--bleu-diploma); }
+    .section-hd h2.light { color: var(--blanc); }
+    .section-hd p { font-size: 16px; max-width: 560px; margin: 0 auto; color: var(--texte-light); }
+    .section-hd p.light { color: rgba(255,255,255,.7); }
+    .divider-line {
+      width: 44px; height: 3px; background: var(--bleu-diploma);
+      margin: 14px auto 0; border-radius: 2px;
+    }
+    .divider-or { background: var(--or); }
+
+    /* ══════════════════════════════════════════
+       FEATURES 3-COL
+    ══════════════════════════════════════════ */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+    .feat-card {
+      background: var(--blanc);
+      border: 1px solid rgba(0,0,0,.07);
+      border-radius: 12px; padding: 32px 26px;
+      text-align: center;
+      transition: all .3s ease;
+    }
+    .feat-card:hover {
+      background: var(--bleu-nuit); color: var(--blanc);
+      box-shadow: 0 10px 32px rgba(18,49,77,.15); transform: translateY(-4px);
+    }
+    .feat-card:hover h3 { color: var(--blanc); }
+    .feat-card:hover p { color: rgba(255,255,255,.75); }
+
+    .feat-icon {
+      width: 62px; height: 62px;
+      background: var(--bleu-nuit);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 24px; color: var(--bleu-diploma);
+    }
+    .feat-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 9px; }
+    .feat-card p { font-size: 13.5px; color: var(--texte-light); }
+
+    /* ══════════════════════════════════════════
+       STATS – fond doré comme "Nos résultats" DS
+    ══════════════════════════════════════════ */
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; text-align: center; }
+    .stat-num {
+      display: block; font-family: 'Matter', sans-serif;
+      font-size: 52px; font-weight: 800; color: var(--bleu-nuit);
+      line-height: 1; margin-bottom: 6px;
+    }
+    .stat-label { font-size: 13.5px; color: var(--bleu-nuit); font-weight: 600; opacity: .75; }
+
+    /* ══════════════════════════════════════════
+       PROGRAMME TIMELINE
+    ══════════════════════════════════════════ */
+    .prog-item {
+      display: flex; gap: 20px;
+      background: var(--blanc); border: 1px solid rgba(0,0,0,.07);
+      border-radius: 12px; padding: 22px 20px;
+      transition: box-shadow .2s;
+    }
+    .prog-item:hover { box-shadow: 0 4px 18px rgba(0,0,0,.07); }
+    .prog-time { flex-shrink: 0; }
+    .time-chip {
+      display: inline-block;
+      background: var(--bleu-nuit); color: var(--bleu-diploma);
+      font-size: 13px; font-weight: 800;
+      padding: 6px 11px; border-radius: 4px;
+      white-space: nowrap;
+    }
+    .prog-body h4 { font-size: 15px; font-weight: 700; margin-bottom: 5px; }
+    .prog-body p { font-size: 13.5px; color: var(--texte-light); }
+
+    /* ══════════════════════════════════════════
+       TESTIMONIALS
+    ══════════════════════════════════════════ */
+    .testi-card {
+      background: var(--blanc); border: 1px solid rgba(0,0,0,.07);
+      border-radius: 12px; padding: 28px 24px;
+    }
+    .stars { color: var(--or); font-size: 13px; letter-spacing: 2px; margin-bottom: 12px; }
+    .testi-text { font-size: 13.5px; font-style: italic; color: var(--texte-light); margin-bottom: 18px; line-height: 1.75; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .author-av {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--bleu-nuit); color: var(--bleu-diploma);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 800; flex-shrink: 0;
+    }
+    .author-name { font-size: 13.5px; font-weight: 700; }
+    .author-role { font-size: 12px; color: var(--texte-light); }
+
+    /* ══════════════════════════════════════════
+       LIEU
+    ══════════════════════════════════════════ */
+    .lieu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .lieu-info h3 {
+      font-family: 'PP Pangaia', Georgia, serif;
+      font-size: 28px; font-weight: 700; margin-bottom: 20px;
+    }
+    .lieu-detail { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; font-size: 14.5px; }
+    .lieu-detail i { color: var(--bleu-diploma); margin-top: 2px; flex-shrink: 0; }
+    .map-wrap {
+      border-radius: 6px; overflow: hidden;
+      box-shadow: 0 10px 36px rgba(0,0,0,.12); height: 320px;
+    }
+    .map-wrap iframe { width: 100%; height: 100%; border: none; }
+
+    /* ══════════════════════════════════════════
+       FAQ
+    ══════════════════════════════════════════ */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid rgba(0,0,0,.09); border-radius: 12px; margin-bottom: 10px; overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; background: var(--blanc); border: none; padding: 18px 22px;
+      text-align: left; font-family: 'Matter', sans-serif;
+      font-size: 14.5px; font-weight: 700; color: var(--texte);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .faq-q i { color: var(--bleu-diploma); flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-q i { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 22px 18px; font-size: 14px; color: var(--texte-light); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ══════════════════════════════════════════
+       BOTTOM CTA
+    ══════════════════════════════════════════ */
+    .bottom-cta {
+      background: var(--bleu-fonce);
+      padding: 72px 0; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .bottom-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(79,171,219,.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bottom-cta h2 {
+      font-family: 'PP Pangaia', Georgia, serif;
+      font-size: 40px; font-weight: 700; color: var(--blanc);
+      margin-bottom: 14px; position: relative;
+    }
+    .bottom-cta h2 em { font-style: italic; color: var(--or); }
+    .bottom-cta p {
+      font-size: 16px; color: rgba(255,255,255,.75);
+      max-width: 540px; margin: 0 auto 34px; position: relative;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: var(--or); color: var(--bleu-nuit);
+      font-family: 'Clash Display', 'Matter', sans-serif; font-size: 14.5px; font-weight: 600;
+      padding: 14px 36px; border-radius: 100px; border: none; cursor: pointer;
+      transition: background .2s, transform .15s; text-decoration: none;
+      position: relative;
+    }
+    .btn-primary:hover { background: var(--or-hover); color: var(--bleu-nuit); transform: translateY(-2px); }
+
+    .btn-or {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--or); color: var(--bleu-fonce);
+      font-family: 'Matter', sans-serif; font-size: 14px; font-weight: 800;
+      padding: 12px 28px; border-radius: 4px; border: none; cursor: pointer;
+      transition: background .2s; text-decoration: none; margin-top: 14px;
+    }
+    .btn-or:hover { background: var(--or-hover); color: var(--bleu-fonce); }
+
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    footer { background: var(--bleu-fonce); padding: 52px 0 0; color: rgba(255,255,255,.65); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .footer-logo { margin-bottom: 14px; }
+    footer p { font-size: 13.5px; line-height: 1.8; max-width: 320px; }
+    footer .logo-brand { color: var(--blanc); }
+    footer .logo-tagline { color: rgba(255,255,255,.5); }
+    .footer-col h4 { font-size: 11px; font-weight: 700; color: var(--bleu-diploma); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { font-size: 13.5px; color: rgba(255,255,255,.55); transition: color .2s; }
+    .footer-col a:hover { color: var(--bleu-diploma); }
+    .footer-bottom { padding: 16px 0; text-align: center; font-size: 12px; color: rgba(255,255,255,.3); }
+    .footer-bottom a { color: rgba(255,255,255,.3); }
+    .footer-bottom a:hover { color: var(--bleu-diploma); }
+
+    /* ══════════════════════════════════════════
+       ANIMATIONS – scroll reveal
+    ══════════════════════════════════════════ */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.visible {
+      opacity: 1; transform: translateY(0);
+    }
+
+    /* Stagger children */
+    .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal-stagger.visible > *:nth-child(1) { transition-delay: .05s; }
+    .reveal-stagger.visible > *:nth-child(2) { transition-delay: .1s; }
+    .reveal-stagger.visible > *:nth-child(3) { transition-delay: .15s; }
+    .reveal-stagger.visible > *:nth-child(4) { transition-delay: .2s; }
+    .reveal-stagger.visible > *:nth-child(5) { transition-delay: .25s; }
+    .reveal-stagger.visible > *:nth-child(6) { transition-delay: .3s; }
+    .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════ */
+    @media (max-width: 980px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .form-card { max-width: 500px; margin: 0 auto; }
+      .hero h1 { font-size: 40px; }
+      .grid-3 { grid-template-columns: repeat(2,1fr); }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .lieu-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 48px 0 56px; }
+      .hero h1 { font-size: 32px; }
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .form-row { grid-template-columns: 1fr; }
+      .cd-inner { gap: 18px; }
+      .cd-num { font-size: 26px; }
+      .trust-inner { gap: 18px; }
+      .section { padding: 54px 0; }
+      .bottom-cta h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+
+      <a href="https://diploma-sante.fr" target="_blank" class="logo-link">
+        <img src="SVG/DS-LOGO2026_Logo horizontal Complet copie 2.svg" alt="Diploma Santé – la prépa médecine" class="logo-img" height="48" />
+      </a>
+
+      <a href="#inscription" class="header-cta">
+        <i class="fa-solid fa-calendar-check"></i>
+        Je m'inscris — c'est gratuit
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════
+     HERO + FORMULAIRE
+══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+
+  <!-- serpent décoratif SVG fond -->
+  <svg class="hero-deco" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M200 20 C280 20 340 80 320 160 C300 240 220 260 240 340 C260 420 340 440 320 480" stroke="#4fabdb" stroke-width="60" stroke-linecap="round" fill="none"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Gauche : infos -->
+      <div>
+        <div class="event-tag">
+          <i class="fa-solid fa-stethoscope"></i>
+          Événement exclusif · Entrée gratuite
+        </div>
+
+        <h1>
+          Immersion<br />
+          <em>Médecine 2026</em>
+        </h1>
+
+        <p class="hero-sub">
+          Une après-midi immersive pensée pour les futurs médecins. Cours spéciaux, rencontres avec des étudiants de toutes les facs d'Île-de-France et conférences exclusives.
+        </p>
+
+        <div class="event-meta">
+          <div class="meta-row">
+            <div class="meta-icon-wrap"><i class="fa-solid fa-calendar-days"></i></div>
+            <div class="meta-text">
+              <strong>Samedi 25 avril 2026</strong>
+              De 14h00 à 18h00
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="meta-text">
+              <strong>Diploma Santé</strong>
+              100 quai de la Rapée, 75012 Paris
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon-wrap"><i class="fa-solid fa-ticket"></i></div>
+            <div class="meta-text">
+              <strong>Participation 100% gratuite</strong>
+              Places limitées — inscription obligatoire
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pills">
+          <span class="pill"><i class="fa-solid fa-check"></i> Cours spéciaux médecine</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Q&A étudiants IdF</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Conférences exclusives</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Networking</span>
+        </div>
+      </div>
+
+      <!-- Droite : formulaire -->
+      <div class="form-card" id="inscription">
+        <div class="form-title">
+          <h3>Réserver ma place gratuitement</h3>
+          <p>Inscription en moins de 30 secondes</p>
+        </div>
+
+        <div class="urgency-strip">
+          <i class="fa-solid fa-fire"></i>
+          Places limitées — Ne tardez pas !
+        </div>
+
+        <form id="regForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" required />
+          </div>
+          <div class="form-group">
+            <label for="niveau">Niveau scolaire *</label>
+            <select id="niveau" name="niveau" required>
+              <option value="" disabled selected>Sélectionnez votre niveau</option>
+              <option>Terminale</option>
+              <option>1ère</option>
+              <option>2nde</option>
+              <option>Étudiant·e en réorientation</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fa-solid fa-rocket"></i>
+            Je réserve ma place — C'est gratuit !
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="success-circle"><i class="fa-solid fa-check"></i></div>
+          <h4>Inscription confirmée !</h4>
+          <p>Un email de confirmation vous sera envoyé. Rendez-vous le <strong>25 avril à 14h</strong> au 100 quai de la Rapée !</p>
+        </div>
+
+        <div class="form-legal">
+          <i class="fa-solid fa-shield-halved"></i>
+          Données sécurisées · Jamais revendues
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TRUST BAR
+══════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><i class="fa-solid fa-graduation-cap"></i> +3 000 élèves formés</div>
+      <div class="trust-item"><i class="fa-solid fa-trophy"></i> #1 prépa médecine Paris</div>
+      <div class="trust-item"><i class="fa-solid fa-star"></i> 85% de réussite en PASS</div>
+      <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Événement 100% gratuit</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     CE QUE VOUS ALLEZ VIVRE
+══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd">
+      <span class="eyebrow">Au programme</span>
+      <h2>Ce que vous allez <em>vivre</em></h2>
+      <p>Une après-midi conçue pour vous donner toutes les clés pour réussir votre entrée en médecine.</p>
+      <div class="divider-line"></div>
+    </div>
+    <div class="grid-3">
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+        <h3>Cours spéciaux Médecine</h3>
+        <p>Vivez un cours de médecine en conditions réelles, animé par nos formateurs experts du PASS / LAS.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-comments"></i></div>
+        <h3>Q&A avec des étudiants</h3>
+        <p>Échangez librement avec des étudiants de toutes les facultés d'Île-de-France. Leurs conseils valent de l'or.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <h3>Conférences exclusives</h3>
+        <p>Assistez à des conférences animées par des professionnels de santé et experts de l'orientation médicale.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <h3>Toutes les facs d'IdF</h3>
+        <p>Sorbonne, Paris Cité, Bichat, Créteil, Versailles, Évry… Chaque faculté représentée pour vous guider.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3>Stratégies méthodologiques</h3>
+        <p>Découvrez les meilleures méthodes pour intégrer le PASS et réussir votre 1ère année de médecine.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3>Networking & Rencontres</h3>
+        <p>Créez des liens avec d'autres futurs médecins et commencez à construire votre réseau dès aujourd'hui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     STATS
+══════════════════════════════════════════ -->
+<section class="section section-or">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <span class="stat-num">3 000+</span>
+        <span class="stat-label">Élèves formés depuis la création</span>
+      </div>
+      <div>
+        <span class="stat-num">85%</span>
+        <span class="stat-label">Taux de réussite en PASS</span>
+      </div>
+      <div>
+        <span class="stat-num">15+</span>
+        <span class="stat-label">Facultés d'Île-de-France représentées</span>
+      </div>
+      <div>
+        <span class="stat-num">10 ans</span>
+        <span class="stat-label">D'expertise en prépa médecine</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PROGRAMME DÉTAILLÉ
+══════════════════════════════════════════ -->
+<section class="section section-creme">
+  <div class="container">
+    <div class="section-hd">
+      <span class="eyebrow">Déroulé de la journée</span>
+      <h2>Programme de <em>l'après-midi</em></h2>
+      <p>Samedi 25 avril 2026 · 14h00 – 18h00 · Diploma Santé, Paris 12e</p>
+      <div class="divider-line"></div>
+    </div>
+    <div class="grid-2">
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">14h00</span></div>
+        <div class="prog-body">
+          <h4>Accueil & Présentation</h4>
+          <p>Accueil des participants et présentation de l'équipe Diploma Santé et du programme de l'après-midi.</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">14h30</span></div>
+        <div class="prog-body">
+          <h4>Cours spécial Médecine</h4>
+          <p>Un cours immersif sur une matière clé du PASS animé par nos formateurs. Vivez la vraie prépa !</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">15h30</span></div>
+        <div class="prog-body">
+          <h4>Table ronde étudiants</h4>
+          <p>Q&A libre avec des étudiants de toutes les facs d'Île-de-France. Posez toutes vos questions.</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">16h30</span></div>
+        <div class="prog-body">
+          <h4>Conférences exclusives</h4>
+          <p>Interventions de professionnels de santé : parcours, spécialités, conseils stratégiques.</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">17h30</span></div>
+        <div class="prog-body">
+          <h4>Networking & Questions libres</h4>
+          <p>Échangez avec l'équipe et les autres participants. Le moment idéal pour poser vos dernières questions.</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-time"><span class="time-chip">18h00</span></div>
+        <div class="prog-body">
+          <h4>Fin de l'événement</h4>
+          <p>Repartez avec des ressources, contacts et toutes les clés pour votre candidature en médecine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TÉMOIGNAGES
+══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd">
+      <span class="eyebrow">Témoignages</span>
+      <h2>Ce qu'ils en <em>disent</em></h2>
+      <p>Ils ont participé à nos événements. Ils sont aujourd'hui en médecine.</p>
+      <div class="divider-line"></div>
+    </div>
+    <div class="grid-3">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« Grâce à la journée Immersion, j'ai compris ce qui m'attendait vraiment en PASS. Les échanges avec les étudiants ont été décisifs. Je suis maintenant en 2ème année à Paris Cité ! »</p>
+        <div class="testi-author">
+          <div class="author-av">L</div>
+          <div>
+            <div class="author-name">Léa M.</div>
+            <div class="author-role">Étudiante en médecine, Paris Cité</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« L'événement a été un vrai déclic. Voir des étudiants de différentes facs m'a aidé à choisir ma fac et à me projeter. Les conférences étaient de très haute qualité. »</p>
+        <div class="testi-author">
+          <div class="author-av">T</div>
+          <div>
+            <div class="author-name">Thomas K.</div>
+            <div class="author-role">Étudiant en PASS, Sorbonne</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« Le cours immersif m'a montré que j'en étais capable. La qualité des formateurs Diploma Santé est inégalée. Une après-midi qui vaut vraiment le déplacement ! »</p>
+        <div class="testi-author">
+          <div class="author-av">C</div>
+          <div>
+            <div class="author-name">Camille D.</div>
+            <div class="author-role">Étudiante en médecine, Bichat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     LIEU
+══════════════════════════════════════════ -->
+<section class="section section-creme">
+  <div class="container">
+    <div class="lieu-grid">
+      <div class="lieu-info">
+        <span class="eyebrow" style="display:block;margin-bottom:10px">Lieu de l'événement</span>
+        <h3>Comment nous rejoindre ?</h3>
+        <div class="lieu-detail">
+          <i class="fa-solid fa-building"></i>
+          <div><strong>Diploma Santé</strong><br />100 quai de la Rapée, 75012 Paris</div>
+        </div>
+        <div class="lieu-detail">
+          <i class="fa-solid fa-train-subway"></i>
+          <div><strong>Métro :</strong> Gare de Lyon (lignes 1, 14, RER A & D) ou Quai de la Rapée (ligne 5)</div>
+        </div>
+        <div class="lieu-detail">
+          <i class="fa-solid fa-bus"></i>
+          <div><strong>Bus :</strong> Lignes 24, 57, 91, 87</div>
+        </div>
+        <div class="lieu-detail">
+          <i class="fa-solid fa-circle-info"></i>
+          <div>Entrée accessible PMR. Parking payant à proximité.</div>
+        </div>
+        <br />
+        <a href="#inscription" class="btn-primary">
+          <i class="fa-solid fa-calendar-check"></i>
+          Réserver ma place gratuitement
+        </a>
+      </div>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.912!2d2.3625!3d48.8465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720c1d5fee0b%3A0x0!2s100+Quai+de+la+Rap%C3%A9e%2C+75012+Paris!5e0!3m2!1sfr!2sfr!4v1700000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Diploma Santé – 100 quai de la Rapée, Paris 12">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Questions <em>fréquentes</em></h2>
+      <div class="divider-line"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">L'événement est-il vraiment gratuit ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">Oui, entièrement. L'inscription et la participation sont 100% gratuites. Il suffit de vous inscrire via le formulaire pour réserver votre place.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">À qui s'adresse cet événement ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">À tous les lycéens (Terminale, 1ère, 2nde) envisageant des études de médecine, ainsi qu'aux étudiants en réorientation. Les parents souhaitant mieux comprendre les études médicales sont également les bienvenus.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Quelles facultés seront représentées ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">Des étudiants de toutes les grandes facultés d'Île-de-France : Sorbonne, Paris Cité (ex-Paris 7), Bichat, Créteil (UPEC), Versailles-Saint-Quentin, Évry et plus encore.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Combien de places sont disponibles ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">Le nombre de places est volontairement limité pour garantir la qualité des échanges. Inscrivez-vous dès maintenant pour ne pas manquer l'événement.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Faut-il apporter quelque chose ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">Rien de particulier ! Venez avec votre curiosité et vos questions. De quoi prendre des notes sera utile. Tout le matériel pédagogique sera fourni sur place.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     COUNTDOWN (urgence avant CTA final)
+══════════════════════════════════════════ -->
+<div class="countdown-bar">
+  <div class="container">
+    <div class="cd-inner">
+      <span class="cd-label" style="color:rgba(255,255,255,.7)">
+        <i class="fa-regular fa-clock" style="color:var(--bleu-diploma);margin-right:6px"></i>
+        L'événement commence dans
+      </span>
+      <div class="cd-timer">
+        <div class="cd-unit"><span class="cd-num" id="days">--</span><span class="cd-lbl">jours</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="hours">--</span><span class="cd-lbl">heures</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="minutes">--</span><span class="cd-lbl">min</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="seconds">--</span><span class="cd-lbl">sec</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     BOTTOM CTA
+══════════════════════════════════════════ -->
+<section class="bottom-cta">
+  <div class="container">
+    <h2>Ne manquez pas cette <em>opportunité</em> !</h2>
+    <p>Places limitées. Inscrivez-vous maintenant pour sécuriser votre place au samedi 25 avril 2026.</p>
+    <a href="#inscription" class="btn-primary">
+      <i class="fa-solid fa-rocket"></i>
+      Je réserve ma place gratuitement
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="https://diploma-sante.fr" target="_blank" class="logo-link">
+            <img src="SVG/DS-LOGO2026_Logo horizontal Complet copie.svg" alt="Diploma Santé" class="logo-img" height="42" />
+          </a>
+        </div>
+        <p>Diploma Santé est la prépa médecine d'excellence à Paris. Depuis 10 ans, nous préparons les futurs médecins avec une méthode exigeante et un accompagnement personnalisé.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="https://diploma-sante.fr" target="_blank">Accueil</a></li>
+          <li><a href="https://diploma-sante.fr" target="_blank">Nos formations</a></li>
+          <li><a href="https://diploma-sante.fr" target="_blank">Résultats</a></li>
+          <li><a href="https://diploma-sante.fr" target="_blank">Témoignages</a></li>
+          <li><a href="#inscription">S'inscrire à l'événement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@diploma-sante.fr"><i class="fa-solid fa-envelope" style="color:var(--bleu-diploma);margin-right:6px"></i>contact@diploma-sante.fr</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" style="color:var(--bleu-diploma);margin-right:6px"></i>@diplomasante</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color:var(--bleu-diploma);margin-right:6px"></i>Diploma Santé</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot" style="color:var(--bleu-diploma);margin-right:6px"></i>100 quai de la Rapée, Paris 12</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      © 2026 Diploma Santé — Tous droits réservés ·
+      <a href="#">Mentions légales</a> ·
+      <a href="#">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════ -->
+<script>
+  // ── Countdown ──
+  const eventDate = new Date('2026-04-25T14:00:00');
+  function tick() {
+    const d = eventDate - new Date();
+    if (d <= 0) return;
+    document.getElementById('days').textContent    = String(Math.floor(d/86400000)).padStart(2,'0');
+    document.getElementById('hours').textContent   = String(Math.floor(d%86400000/3600000)).padStart(2,'0');
+    document.getElementById('minutes').textContent = String(Math.floor(d%3600000/60000)).padStart(2,'0');
+    document.getElementById('seconds').textContent = String(Math.floor(d%60000/1000)).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 1000);
+
+  // ── FAQ ──
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  }
+
+  // ── Formulaire ──
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('regForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // ── Scroll ancres ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+
+  // ── Scroll reveal ──
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.section-hd, .grid-3, .grid-2, .stats-grid, .testi-card, .faq-list, .lieu-grid, .bottom-cta h2, .bottom-cta p, .bottom-cta .btn-primary').forEach(el => {
+    el.classList.add('reveal');
+    obs.observe(el);
+  });
+</script>
+
+</body>
+</html>
