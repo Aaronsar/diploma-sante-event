@@ -1105,15 +1105,15 @@
       body: JSON.stringify(data)
     })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(json => {
-      alert('DEBUG OK: ' + JSON.stringify(json));
+    .then(() => {
       form.style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     })
     .catch(err => {
-      alert('DEBUG ERREUR: ' + err);
+      console.error('HubSpot submission error:', err);
       btn.innerHTML = '<i class="fa-solid fa-rocket"></i> Je réserve ma place — C\'est gratuit !';
       btn.disabled = false;
+      alert('Une erreur est survenue. Merci de réessayer ou de nous contacter directement.');
     });
   }
 
