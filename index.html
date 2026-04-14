@@ -89,37 +89,25 @@
     .logo-text { font-family: 'PP Pangaia', Georgia, serif; font-size: 26px; font-weight: 700; color: var(--bleu-nuit); }
     .logo-text span { color: var(--bleu-diploma); }
 
-    /* Nav menu */
-    .header-nav { display: flex; align-items: center; gap: 32px; }
-    .header-nav a { font-size: 14px; font-weight: 500; color: var(--texte); transition: color .2s; text-decoration: none; }
-    .header-nav a:hover { color: var(--bleu-diploma); }
-
-    /* Phone */
-    .header-phone { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--texte); text-decoration: none; }
-    .header-phone:hover { color: var(--bleu-diploma); }
-
-    /* CTA buttons */
-    .header-btns { display: flex; align-items: center; gap: 10px; }
-    .btn-outline {
-      display: inline-flex; align-items: center;
-      border: 1.5px solid var(--or);
-      color: var(--or);
-      font-size: 13px; font-weight: 600;
-      padding: 9px 22px; border-radius: 100px;
-      transition: all .2s; text-decoration: none; background: transparent;
+    /* Event date pill */
+    .header-event-info {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 14px; font-weight: 500; color: var(--texte);
+      opacity: .7;
     }
-    .btn-outline:hover { background: var(--or); color: var(--bleu-nuit); }
+
+    /* CTA button */
     .btn-gold {
       display: inline-flex; align-items: center;
       background: var(--or); color: var(--blanc);
-      font-size: 13px; font-weight: 600;
+      font-family: 'Matter', sans-serif; font-size: 13px; font-weight: 700;
       padding: 10px 22px; border-radius: 100px;
       transition: background .2s, transform .15s; text-decoration: none;
     }
     .btn-gold:hover { background: var(--or-hover); color: var(--blanc); transform: translateY(-1px); }
 
-    @media (max-width: 980px) {
-      .header-nav, .header-phone { display: none; }
+    @media (max-width: 640px) {
+      .header-event-info { display: none; }
     }
 
     /* ══════════════════════════════════════════
@@ -526,33 +514,26 @@
     .btn-or:hover { background: var(--or-hover); color: var(--bleu-fonce); }
 
     /* ══════════════════════════════════════════
-       FOOTER
+       FOOTER – event simplifié
     ══════════════════════════════════════════ */
-    footer { background: #241e3f; padding: 64px 0 0; color: rgba(255,255,255,.65); }
-    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; padding-bottom: 50px; }
+    footer { background: #241e3f; padding: 64px 0 40px; color: rgba(255,255,255,.65); }
+    .footer-event-wrap { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
     .footer-brand .logo-text { color: var(--blanc); font-size: 24px; }
-    .footer-brand .logo-text span { color: var(--blanc); }
-    .footer-headline { font-family: 'Clash Display', sans-serif; font-size: 52px; font-weight: 700; color: var(--blanc); line-height: 1.2; margin: 20px 0 14px; width: 75%; }
+    .footer-brand .logo-text span { color: var(--bleu-diploma); }
+    .footer-headline { font-family: 'Clash Display', sans-serif; font-size: 40px; font-weight: 700; color: var(--blanc); line-height: 1.2; margin: 20px 0 14px; }
     .footer-brand small { font-size: 13px; color: rgba(255,255,255,.5); }
-    .footer-col h4 { font-family: 'Matter', sans-serif; font-size: 15px; font-weight: 700; color: var(--blanc); text-transform: uppercase; margin-bottom: 10px; }
-    .footer-col ul { list-style: none; }
-    .footer-col li { margin-bottom: 10px; }
-    .footer-col a { font-family: 'Matter', sans-serif; font-size: 15px; font-weight: 400; color: rgba(255,255,255,.8); transition: color .2s; text-decoration: none; line-height: 1em; }
-    .footer-col a:hover { color: var(--blanc); }
-    .footer-col p { font-family: 'Matter', sans-serif; font-size: 15px; font-weight: 400; color: rgba(255,255,255,.8); margin-bottom: 8px; line-height: 1.4; }
-    .footer-mid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; padding: 40px 0 50px; border-top: 1px solid rgba(255,255,255,.08); }
-    .footer-bottom { padding: 20px 0; border-top: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; gap: 24px; }
+    .footer-event-right { display: flex; flex-direction: column; align-items: flex-end; gap: 20px; }
     .footer-socials { display: flex; gap: 12px; }
     .footer-socials a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 100px; background: rgba(255,255,255,.12); color: var(--blanc); font-size: 16px; transition: background .2s; text-decoration: none; }
     .footer-socials a:hover { background: rgba(255,255,255,.25); }
-    .footer-legal { font-size: 13px; color: rgba(255,255,255,.35); }
-    .footer-legal a { color: rgba(255,255,255,.35); text-decoration: none; }
+    .footer-legal { font-size: 13px; color: rgba(255,255,255,.45); }
+    .footer-legal a { color: rgba(255,255,255,.45); text-decoration: none; }
     .footer-legal a:hover { color: var(--blanc); }
 
-    @media (max-width: 980px) {
-      .footer-top, .footer-mid { grid-template-columns: 1fr; gap: 32px; }
-      .footer-headline { font-size: 36px; width: 100%; }
-      .footer-bottom { flex-direction: column; gap: 12px; }
+    @media (max-width: 768px) {
+      .footer-event-wrap { flex-direction: column; align-items: flex-start; gap: 32px; }
+      .footer-event-right { align-items: flex-start; }
+      .footer-headline { font-size: 30px; }
     }
 
     /* ══════════════════════════════════════════
@@ -616,21 +597,11 @@
         <span class="logo-text">Diploma <span>Santé</span></span>
       </a>
 
-      <nav class="header-nav">
-        <a href="https://diploma-sante.fr/etudes-de-sante/" target="_blank">Études de Santé</a>
-        <a href="https://diploma-sante.fr/prepa-medecine-paris/" target="_blank">Nos préparations</a>
-        <a href="https://diploma-sante.fr" target="_blank">Notre institution</a>
-        <a href="https://diploma-sante.fr/blog/" target="_blank">Le Blog</a>
-      </nav>
-
-      <a href="tel:+33176410173" class="header-phone">
-        <i class="fa-solid fa-phone"></i> +33 1 76 41 01 73
-      </a>
-
-      <div class="header-btns">
-        <a href="https://diploma-sante.fr/#brochure" target="_blank" class="btn-outline">Brochure</a>
-        <a href="https://diploma-sante.fr/#candidater" target="_blank" class="btn-gold">Candidater</a>
+      <div class="header-event-info">
+        <i class="fa-solid fa-calendar-day"></i> Samedi 25 avril 2026 · 14h–18h
       </div>
+
+      <a href="#hero" class="btn-gold">Je réserve ma place</a>
     </div>
   </div>
 </header>
@@ -759,10 +730,6 @@
           <p>Un email de confirmation vous sera envoyé. Rendez-vous le <strong>25 avril à 14h</strong> au 100 quai de la Rapée !</p>
         </div>
 
-        <div class="form-legal">
-          <i class="fa-solid fa-shield-halved"></i>
-          Données sécurisées · Jamais revendues
-        </div>
       </div>
 
     </div>
@@ -1091,64 +1058,26 @@
 ══════════════════════════════════════════ -->
 <footer>
   <div class="container">
+    <div class="footer-event-wrap">
 
-    <!-- Haut : brand + colonnes -->
-    <div class="footer-top">
       <div class="footer-brand">
         <span class="logo-text">Diploma <span>Santé</span></span>
-        <div class="footer-headline">La Prépa Médecine avec 78 % de taux de réussite</div>
-        <small>@ Diploma Santé</small>
+        <div class="footer-headline">La Prépa Médecine<br>avec 78 % de taux de réussite</div>
+        <small>@ Diploma Santé 2026</small>
       </div>
-      <div class="footer-col">
-        <h4>Notre institution</h4>
-        <ul>
-          <li><a href="https://diploma-sante.fr" target="_blank">Notre savoir-faire</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Nos résultats</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Candidater</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Nos préparations</h4>
-        <ul>
-          <li><a href="https://diploma-sante.fr" target="_blank">Première Elite</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Terminale Santé</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">PAES FR/EU</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Prépa PASS</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Prépa LAS</a></li>
-          <li><a href="https://diploma-sante.fr" target="_blank">Prépa LSPS</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- Milieu : contact + campus -->
-    <div class="footer-mid">
-      <div></div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Du lundi au vendredi<br />de 9h00 à 13h00 et 14h00 à 18h00</p>
-        <p><a href="tel:+33176410173">+33 1 76 41 01 73</a></p>
-        <p><a href="mailto:contact@diploma-sante.fr">contact@diploma-sante.fr</a></p>
+      <div class="footer-event-right">
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/school/diploma-sant%C3%A9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/diplomasante/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/diplomasante" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-legal">
+          <a href="https://diploma-sante.fr/mentions-legales/" target="_blank">Mentions légales</a> · <a href="https://diploma-sante.fr/politique-de-confidentialite/" target="_blank">Politique de confidentialité</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Campus</h4>
-        <p>100 quai de la Rapée 75012 PARIS</p>
-        <p>85 avenue Ledru Rollin 75012 PARIS</p>
-        <p>29 rue Lauriston 75016 PARIS</p>
-      </div>
-    </div>
 
-    <!-- Bas : socials + légal -->
-    <div class="footer-bottom">
-      <div class="footer-socials">
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-      </div>
-      <div class="footer-legal">
-        <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a>
-      </div>
     </div>
-
   </div>
 </footer>
 
